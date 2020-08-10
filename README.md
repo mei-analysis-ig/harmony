@@ -25,13 +25,12 @@ This list tries to be exhaustive but some features will probably remain explicit
   * chord tones
     * bass / lowest pitch (class)
     * chord root (if applicable)
-    * every other chord tone together with the interval class it forms over the bass / lowest pitch
+    * every other chord tone together with the interval class it forms over the bass and/or (?) over the root
     * for every pitch: information whether it is explicit or implicit in the score
       * boolean?
       * backlinks to non-chord tones replacing a chord tone (see below)?
       * list of occurrences (timestamps + durations (+ octaves), note IDs for a particular score)?
   * non-chord tones considered as belonging to the harmony
-    * 
     * suspension/retardation: Which pitch is being suspended? Does the resolution occur in the same segment?
     * organ point / pedal point
     * ... ?
@@ -49,7 +48,21 @@ This list tries to be exhaustive but some features will probably remain explicit
  * is part of a (particular) sequence
  * is part of a cadence
  
+ ### Feature Matrix
+ 
+ This table can serve as a test whether the concrete features suffice to derive the abstract features required for the different harmony systems.
+ 
+ | features > standard v | segmentation & context | root            | bass                      | intervals over root          | intervals over bass          | distinction chord vs. non-chord tones |
+|-----------------------|------------------------|-----------------|---------------------------|------------------------------|------------------------------|---------------------------------------|
+| Absolute Chords       | +                      | + (pitch class) | + (pitch class)           | + (chord type)               | -                            | + (chord type vs. parantheses)        |
+| Funktionstheorie      | +                      | + (function)    | + (root interval)         | + (all additions)            | -                            | + (function vs. additions)            |
+| Roman Numerals        | +                      | + (numeral)     | + (implicit in inversion) | + (alterations, suspensions) | + (inversion)                | + (numeral + inversion vs. additions) |
+| Bassstufen            | +                      | -               | + (numeral)               | -                            | + (figured bass conventions) | -                                     |
+ 
+ 
  ## General features of a segment that can be derived from the score
+ 
+ These are features that can be used to characterize any kind of score segment and don't necessarily form part of a metamodel of harmony.
  
  * ambitus
  * prevalence of pitches (in the particular octaves)
