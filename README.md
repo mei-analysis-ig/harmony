@@ -52,13 +52,12 @@ This list tries to be exhaustive but some features will probably remain explicit
  
  This table can serve as a test whether the concrete features suffice to derive the abstract features required for the different harmony systems.
  
- | features > standard v | segmentation & context | root            | bass                      | intervals over root          | intervals over bass          | distinction chord vs. non-chord tones |
-|-----------------------|------------------------|-----------------|---------------------------|------------------------------|------------------------------|---------------------------------------|
-| Absolute Chords       | +                      | + (pitch class) | + (pitch class)           | + (chord type)               | -                            | + (chord type vs. parantheses)        |
-| Funktionstheorie      | +                      | + (function)    | + (root interval)         | + (all additions)            | -                            | + (function vs. additions)            |
-| Roman Numerals        | +                      | + (numeral)     | + (implicit in inversion) | + (alterations, suspensions) | + (inversion)                | + (numeral + inversion vs. additions) |
-| Bassstufen            | +                      | -               | + (numeral)               | -                            | + (figured bass conventions) | -                                     |
- 
+| features > standard v | segmentation & context | tonality / scale | root            | bass                      | intervals over root          | intervals over bass          | distinction chord vs. non-chord tones |
+|-----------------------|------------------------|------------------|-----------------|---------------------------|------------------------------|------------------------------|---------------------------------------|
+| Absolute Chords       | +                      | -                | + (pitch class) | + (pitch class)           | + (chord type)               | -                            | + (chord type vs. parantheses)        |
+| Funktionstheorie      | +                      | + (function)     | + (function)    | + (root interval)         | + (all additions)            | -                            | + (function vs. additions)            |
+| Roman Numerals        | +                      | + (numeral)      | + (numeral)     | + (implicit in inversion) | + (alterations, suspensions) | + (inversion)                | + (numeral + inversion vs. additions) |
+| Bassstufen            | +                      | + (numeral)      | -               | + (numeral)               | -                            | + (figured bass conventions) | -                                     |
  
  ## General features of a segment that can be derived from the score
  
